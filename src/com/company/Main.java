@@ -22,16 +22,14 @@ public class Main {
             return true;
         }
 
-
+//Jarvis klasa
         public void Jarvis(Point[] points) {
             int n = points.length;
-            //ako je manje od 3 tacke ne postoji ravan
             if (n < 3)
                 return;
             int[] next = new int[n];
             Arrays.fill(next, -1);
 
-            // trazenje najlevlje tacke
             int najlevlja = 0;
             for (int i = 1; i < n; i++)
                 if (points[i].x < points[najlevlja].x)
@@ -62,7 +60,7 @@ public class Main {
         int y;
 
     }
-
+//Main funkcija
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
