@@ -1,6 +1,7 @@
 package com.company;
 
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class Main {
 
@@ -63,6 +64,21 @@ public class Main {
     }
 
     public static void main(String[] args) {
-	// write your code here
-    }
-}
+        Scanner scan = new Scanner(System.in);
+
+        Jarvis j = new Jarvis();
+
+        System.out.println("Unesite broj tacaka :");
+        int n = scan.nextInt();
+        Point[] points = new Point[n];
+        System.out.println("Unesite "+ n +" x, y koordinata");
+        for (int i = 0; i < n; i++)
+        {
+            points[i] = new Point();
+            points[i].x = scan.nextInt();
+            points[i].y = scan.nextInt();
+        }
+        j.Jarvis(points)
+
+
+    }}
